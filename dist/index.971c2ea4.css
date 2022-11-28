@@ -267,19 +267,25 @@ template, [hidden] {
 }
 
 .wrapper-bg__blure-bottomleft {
-  width: 175px;
-  height: 175px;
+  width: 10.94rem;
+  height: 10.94rem;
   filter: blur(250px);
   background: #2286be;
   position: absolute;
-  top: 830px;
+  top: 51.875rem;
   left: -26px;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.wrapper-bg__ornament-circle {
+.wrapper-bg__ornament-circle-aside-top {
   position: absolute;
-  top: 900px;
+  top: 56.25rem;
+  right: 0;
+}
+
+.wrapper-bg__ornament-circle-aside-bottom {
+  position: absolute;
+  top: 171.875rem;
   right: 0;
 }
 
@@ -478,7 +484,7 @@ button, a {
 }
 
 .about__maincontent-content-title {
-  max-width: 219px;
+  max-width: 13.687rem;
 }
 
 .about__content-text {
@@ -487,20 +493,20 @@ button, a {
 
 .about__maincontent-content-button {
   width: 52.4691%;
-  min-height: 56px;
+  min-height: 3.5rem;
   margin-top: 32px;
 }
 
 .about__main-content-collage {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .about__ratings {
-  min-height: 564px;
+  min-height: 35.25rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 3rem;
   display: flex;
 }
 
@@ -508,9 +514,9 @@ button, a {
   color: #fff;
   text-align: center;
   font-family: Inter;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 1.21em;
 }
 
 .about__ratings-rating-subtitle {
@@ -519,8 +525,63 @@ button, a {
 }
 
 .about-container {
-  max-width: 324px;
+  max-width: 20.25rem;
   margin: 0 auto;
+}
+
+.we-do__content {
+  position: relative;
+}
+
+.we-do__content .we-do__content-list {
+  margin-top: 26px;
+}
+
+.we-do__content-list-item {
+  background: url("we-do-tick.75acbbd1.svg") 0 10px no-repeat;
+  padding-left: 2.94rem;
+}
+
+.we-do__content-list-item-title {
+  color: #fff;
+  font-family: Red Hat Display;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.we-do__content-list-item-text {
+  margin: 16px 0 24px;
+}
+
+.we-do__content-picture {
+  z-index: 1;
+  position: absolute;
+}
+
+.we-do__content-ornament-dots {
+  z-index: 1;
+  position: absolute;
+  top: 60.62rem;
+  left: 10px;
+}
+
+.we-do__container--yellow {
+  min-height: 24.125rem;
+  background-color: #ffc93e;
+  position: relative;
+}
+
+.we-do__ornament-circle {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+}
+
+.we-do-container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-bottom: 90px;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

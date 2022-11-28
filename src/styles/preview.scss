@@ -26,11 +26,7 @@
   }
   &__content-title {
     margin: 0;
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 4.375rem;
-    line-height: 1.21em;
-    color: #ffffff;
+    @include font("Inter", 700, 4.375rem, 1.21em, #ffffff);
   }
   &__content-title-digital {
     margin-left: 25%;

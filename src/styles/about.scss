@@ -1,7 +1,7 @@
 .about {
   padding: 45px 0 80px 0;
   &__maincontent-content-title {
-    max-width: 219px;
+    max-width: 13.687rem;
   }
   &__content-text {
     margin-top: 24px;
@@ -9,21 +9,21 @@
   &__maincontent-content-button {
     margin-top: 32px;
     width: calc(170 / 324 * 100%);
-    min-height: 56px;
+    min-height: 3.5rem;
   }
   &__main-content-collage {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
   &__ratings {
-    margin-top: 48px;
-    min-height: 564px;
+    margin-top: 3rem;
+    min-height: 35.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   &__ratings-rating-title {
-    @include font("Inter", 700, 48px, 58px, #ffffff);
+    @include font("Inter", 700, 3rem, 1.21em, #ffffff);
     text-align: center;
   }
   &__ratings-rating-subtitle {
@@ -32,6 +32,6 @@
   }
 }
 .about-container {
-  max-width: 324px;
+  max-width: 20.25rem;
   margin: 0 auto;
 }

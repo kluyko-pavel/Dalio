@@ -38,17 +38,22 @@
   }
   &__blure-bottomleft {
     position: absolute;
-    width: 175px;
-    height: 175px;
+    width: 10.94rem;
+    height: 10.94rem;
     left: -26px;
-    top: 830px;
+    top: 51.875rem;
     background: #2286be;
     filter: blur(250px);
     transform: matrix(1, 0, 0, -1, 0, 0);
   }
-  &__ornament-circle {
+  &__ornament-circle-aside-top {
     position: absolute;
-    top: 900px;
+    top: 56.25rem;
+    right: 0;
+  }
+  &__ornament-circle-aside-bottom {
+    position: absolute;
+    top: 171.875rem;
     right: 0;
   }
 }

@@ -1,0 +1,46 @@
+.we-do {
+  &__content {
+    position: relative;
+  }
+  &__content &__content-list {
+    margin-top: 26px;
+  }
+  &__content-list-item {
+    background: url(../assets/icons/we-do-tick.svg);
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    padding-left: 2.94rem;
+  }
+  &__content-list-item-title {
+    @include font("Red Hat Display", 700, 1.25rem, 1.3em, #ffffff);
+  }
+  &__content-list-item-text {
+    margin: 16px 0 24px 0;
+  }
+  &__content-picture {
+    position: absolute;
+    z-index: 1;
+  }
+  &__content-ornament-dots {
+    position: absolute;
+    left: 10px;
+    top: 60.62rem;
+    z-index: 1;
+  }
+
+  &__container--yellow {
+    background-color: $main-yellow;
+    min-height: 24.125rem;
+    position: relative;
+  }
+  &__ornament-circle {
+    position: absolute;
+    right: 0;
+    top: -2.5rem;
+  }
+}
+.we-do-container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
