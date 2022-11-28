@@ -1,0 +1,82 @@
+.preview {
+  padding-top: 2rem;
+  min-height: 64.375rem;
+  &__content {
+    position: relative;
+  }
+  &__content-image {
+    position: absolute;
+    left: -30px;
+    top: 0;
+  }
+  &__content-dashed-line {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+  }
+  &__content-star-top {
+    position: absolute;
+    right: 25px;
+    top: -25px;
+  }
+  &__content-star-bottom {
+    position: absolute;
+    top: 15.62rem;
+    right: 20px;
+  }
+  &__content-title {
+    margin: 0;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 4.375rem;
+    line-height: 1.21em;
+    color: #ffffff;
+  }
+  &__content-title-digital {
+    margin-left: 25%;
+  }
+  &__content-text {
+    max-width: 19.31rem;
+    padding: 1rem 0 1.5rem 0;
+  }
+  &__content-button {
+    width: calc(157 / 327 * 100%);
+    min-height: 3.375rem;
+    position: relative;
+    z-index: 1;
+  }
+  &__content-photo {
+    position: absolute;
+    z-index: 1;
+    top: 23.44rem;
+  }
+  &__content-playvideo {
+    position: absolute;
+    top: 640px;
+    right: 25px;
+    z-index: 2;
+    background: transparent;
+    border: none;
+  }
+  &__content-photo--small {
+    position: absolute;
+    top: 48.125rem;
+    left: 0;
+    z-index: 1;
+  }
+  &__content-ornament-dots {
+    position: absolute;
+    top: 50rem;
+    right: 8.125rem;
+    z-index: 2;
+  }
+  &__content-ornament-circle {
+    position: absolute;
+    top: 56.25rem;
+    right: 7.5rem;
+  }
+}
+.container-preview {
+  max-width: 20.44rem;
+  margin: 0 auto;
+}

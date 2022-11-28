@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.21em;
+  color: #ffffff;
+}
+p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875em;
+  color: $main-white2;
+}
+button,
+a {
+  cursor: pointer;
+}
+.yellow-button {
+  @extend %button;
+  color: $main-blue;
+  border-radius: 30px;
+  background-color: $main-yellow;
+  border: none;
+  &__arrow {
+    margin-left: 8px;
+  }
+}
