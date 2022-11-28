@@ -2,18 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 h2 {
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.21em;
-  color: #ffffff;
+  @include font("Inter", 700, 1.5rem, 1.21em, #ffffff);
 }
 p {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.875em;
-  color: $main-white2;
+  @include font("Inter", 400, 1rem, 1.875em, $main-white2);
 }
 button,
 a {

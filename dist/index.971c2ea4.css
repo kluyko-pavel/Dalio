@@ -473,4 +473,54 @@ button, a {
   margin: 0 auto;
 }
 
+.about {
+  padding: 45px 0 80px;
+}
+
+.about__maincontent-content-title {
+  max-width: 219px;
+}
+
+.about__content-text {
+  margin-top: 24px;
+}
+
+.about__maincontent-content-button {
+  width: 52.4691%;
+  min-height: 56px;
+  margin-top: 32px;
+}
+
+.about__main-content-collage {
+  margin-top: 40px;
+}
+
+.about__ratings {
+  min-height: 564px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  display: flex;
+}
+
+.about__ratings-rating-title {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.about__ratings-rating-subtitle {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-container {
+  max-width: 324px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=index.971c2ea4.css.map */
