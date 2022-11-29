@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAI,OAAO,WAAW;IACpB,YAAY;QACV,IAAI;QACJ,WAAW,IAAI;IACjB;AACF","sources":["public/main.js"],"sourcesContent":["new Swiper(\".swiper\", {\n  pagination: {\n    el: \".swiper-pagination\",\n    clickable: true,\n  },\n});\n"],"names":[],"version":3,"file":"index.5217163c.js.map","sourceRoot":"/__parcel_source_root/"}

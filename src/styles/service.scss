@@ -1,0 +1,45 @@
+.service {
+  padding: 5rem 0 3.75rem 0;
+
+  &__content {
+    padding-top: 24px;
+    margin: 0 -9px;
+  }
+  &__content-item {
+    padding: 3rem 3rem 3rem 2.12rem;
+    margin: 0 9px;
+    background-color: #353f5b;
+    border-radius: 30px;
+    width: calc(100% / 12 * 12 - 18px) !important;
+  }
+  &__content-item-icon-img {
+    width: 3rem;
+    height: 3rem;
+  }
+  &__content-item-title {
+    padding: 2.25rem 0 1rem 0;
+    @include font("Inter", 600, 1.25rem, 1.2em, #fff);
+  }
+  &__content-item-button {
+    margin-top: 2rem;
+    width: calc(159 / 248 * 100%);
+    min-height: 3.25rem;
+  }
+}
+.sevice-container {
+  max-width: 20.62rem;
+  margin: 0 auto;
+  .swiper-pagination {
+    bottom: 0px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #f3f5f6;
+    opacity: 1;
+    margin: 0 10px;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $main-yellow;
+  }
+}
