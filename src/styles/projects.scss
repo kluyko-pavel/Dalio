@@ -1,0 +1,31 @@
+.projects {
+  padding-top: 80px;
+  &__filter {
+    padding: 32px 0 40px 0;
+    overflow: scroll;
+  }
+  &__filter-items {
+    width: 476px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__filter-link {
+    text-decoration: none;
+    @include font("Inter", 500, 16px, 30px, #f3f5f6);
+  }
+  &__filter-link:hover {
+    color: $main-yellow;
+  }
+  &__content {
+    margin: 0 -8px;
+  }
+
+  &__content-item {
+    margin: 0 8px;
+    width: calc(100% / 12 * 12 - 16px) !important;
+  }
+}
+.projects-container {
+  margin: 0 auto;
+  max-width: 327px;
+}
