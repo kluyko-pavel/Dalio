@@ -1,0 +1,20 @@
+.yellow-button {
+  @extend %button;
+  color: $main-blue;
+  border-radius: 30px;
+  background-color: $main-yellow;
+  border: none;
+  &__arrow {
+    margin-left: 8px;
+  }
+}
+.transp-button {
+  @extend %button;
+  color: #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  border-color: #fff;
+  &__arrow {
+    margin-left: 8px;
+  }
+}
