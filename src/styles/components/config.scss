@@ -11,13 +11,3 @@ button,
 a {
   cursor: pointer;
 }
-.yellow-button {
-  @extend %button;
-  color: $main-blue;
-  border-radius: 30px;
-  background-color: $main-yellow;
-  border: none;
-  &__arrow {
-    margin-left: 8px;
-  }
-}
