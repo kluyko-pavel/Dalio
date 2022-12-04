@@ -727,6 +727,10 @@ button, a {
   display: flex;
 }
 
+.reviews__content-item-reviewer-photo {
+  align-self: flex-start;
+}
+
 .reviews__content-item-reviewer-name {
   margin-left: 16px;
 }
@@ -812,6 +816,107 @@ button, a {
 .blog__content-item-button {
   width: 45.8716%;
   min-height: 56px;
+}
+
+.main-footer {
+  background-color: #353f5b;
+  padding: 40px 0 29px;
+}
+
+.main-footer__information {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.main-footer__information-form {
+  background-color: #ffc93e;
+  border-radius: 20px;
+  padding: 60px 48px;
+  position: relative;
+}
+
+.main-footer__information-form-title {
+  color: #0a142f;
+  margin: 0;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.main-footer__information-form-input {
+  width: 100%;
+  min-height: 30px;
+  background-color: #0000;
+  border: none;
+  border-bottom: 1px solid #f3f5f6;
+  outline: none;
+  margin-top: 15px;
+}
+
+.main-footer__information-form-input::placeholder {
+  color: #0a142f;
+  letter-spacing: -.21px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.main-footer__information-form-submit {
+  width: 16px;
+  height: 16px;
+  background: url("submit-icon.2878d94c.svg") no-repeat;
+  border: none;
+  position: absolute;
+  top: 170px;
+  right: 48px;
+}
+
+.main-footer__information-contacts {
+  width: 52.5994%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+}
+
+.main-footer__information-contacts-title {
+  color: #fff;
+  margin: 0;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.main-footer__information-contacts-inf {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.main-footer__additional-inf {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+}
+
+.main-footer__additional-inf-privacy {
+  width: 28.7462%;
+  text-align: center;
+}
+
+.main-footer__additional-inf-links {
+  width: 51.3761%;
+  justify-content: space-between;
+  margin-top: 32px;
+  display: flex;
+}
+
+.main-footer__additional-inf-copiraiting {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */
