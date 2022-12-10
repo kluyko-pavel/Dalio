@@ -2,27 +2,20 @@
   padding: 80px 0;
   &__content {
     padding-top: 24px;
-    margin: 0 -8px;
   }
   &__content-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 8px;
-    width: calc(100% / 12 * 12 - 16px) !important;
   }
   &__content-item-badge {
     margin: 24.84px 0 16px 0;
-    width: 33.333%;
-    min-height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 5px 12px;
     background-color: #f3f5f6;
     border-radius: 36px;
   }
   &__content-item-badge-text {
-    @include font("Red Hat Display", 500, 12px, 18px, $main-yellow);
+    @include font("Red Hat Display", 500, 12px, 18px, $secondary-clr);
   }
   &__content-item-date {
     @include font("Inter", 500, 16px, 24px, #fff);
@@ -34,7 +27,37 @@
     @include font("Inter", 700, 20px, 38px, #fff);
   }
   &__content-item-button {
-    width: calc(150 / 327 * 100%);
+    width: calc(150 / 319 * 100%);
     min-height: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  .blog {
+    padding: 120px 0 112px 0;
+    &__content {
+      padding: 40px 0 0 0;
+    }
+    &__header-title {
+      text-transform: capitalize;
+    }
+    &__content-item {
+      align-items: flex-start;
+    }
+    &__content-item-badge {
+      border-radius: 10px;
+    }
+    &__content-item-badge-text {
+      color: $main-clr;
+    }
+    &__content-item-description {
+      margin: 16px 0 24px 0;
+      max-width: 554px;
+      text-align: start;
+      font-size: 30px;
+    }
+    &__content-item-button {
+      width: calc(150 / 512 * 100%);
+      min-height: 56px;
+    }
   }
 }

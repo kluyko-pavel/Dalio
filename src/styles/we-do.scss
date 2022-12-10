@@ -1,4 +1,5 @@
 .we-do {
+  padding-top: 5rem;
   &__content {
     position: relative;
   }
@@ -29,7 +30,7 @@
   }
 
   &__container--yellow {
-    background-color: $main-yellow;
+    background-color: $secondary-clr;
     min-height: 24.125rem;
     position: relative;
   }
@@ -38,7 +39,81 @@
     right: 0;
     top: -2.5rem;
   }
+  &__ornament-circle-desktop {
+    display: none;
+  }
 }
 .we-do-container {
   padding-bottom: 5.625rem;
+}
+@media (min-width: 600px) {
+  .we-do {
+    &__content-picture {
+      left: 30%;
+      right: 30%;
+    }
+    &__content-ornament-dots {
+      left: 13.75rem;
+      top: 42rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .we-do {
+    padding-top: 7.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    &__container--grey {
+      background-color: $secondary-clr-dark;
+      width: 60%;
+    }
+    &__content {
+      max-width: 33.44rem;
+    }
+    &__content &__content-list {
+      margin-top: 3.125rem;
+    }
+    &__content-list-item {
+      background: url(../assets/icons/we-do-tick-white.svg);
+      background-position-y: 0;
+      background-repeat: no-repeat;
+    }
+    &__content-list-item-title {
+      font-size: 1.5rem;
+      line-height: 1.21em;
+    }
+    &__content-list-item-text {
+      margin: 18px 0 42px 0;
+    }
+    &__content-picture {
+      width: calc(649 / 535 * 100%);
+      top: -3.75rem;
+      left: -140%;
+    }
+    &__content-picture-img {
+      width: 100%;
+    }
+    &__content-ornament-dots {
+      left: -145%;
+      top: 32.81rem;
+    }
+
+    &__container--yellow {
+      min-height: auto;
+      width: 40%;
+    }
+    &__ornament-circle {
+      display: none;
+    }
+    &__ornament-circle-desktop {
+      display: block;
+      position: absolute;
+      right: -9.375rem;
+      top: 3.125rem;
+    }
+  }
+  .we-do-container {
+    padding: 9.437rem 2.81rem 9.375rem 13.69rem;
+    margin: 0;
+  }
 }

@@ -1,0 +1,142 @@
+.bg {
+  &__ornament {
+    width: 56%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+  }
+  &__blure-topleft {
+    position: absolute;
+    width: 13.87rem;
+    height: 13.87rem;
+    left: -17px;
+    top: 0;
+    background: #7c3eff;
+    filter: blur(250px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__blure-topright {
+    position: absolute;
+    width: 8.81rem;
+    height: 8.81rem;
+    right: 0;
+    top: 0;
+    background: #be229c;
+    filter: blur(250px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__blure-bottomright {
+    position: absolute;
+    width: 8.81rem;
+    height: 8.81rem;
+    right: 0;
+    top: 26.37rem;
+    background: #ffc93e;
+    filter: blur(250px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__blure-bottomleft {
+    position: absolute;
+    width: 10.94rem;
+    height: 10.94rem;
+    left: -26px;
+    top: 51.875rem;
+    background: #2286be;
+    filter: blur(250px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__blure-service {
+    display: none;
+  }
+  &__blure-projects {
+    display: none;
+  }
+  &__blure-reviews {
+    display: none;
+  }
+  &__blure-blog {
+    display: none;
+  }
+  &__ornament-circle-aside-top {
+    position: absolute;
+    top: 56.25rem;
+    right: 0;
+  }
+  &__ornament-circle-aside-bottom {
+    position: absolute;
+    top: 171.875rem;
+    right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .bg {
+    &__blure-topleft {
+      width: 23.7%;
+      height: 21.31rem;
+    }
+    &__blure-topright {
+      width: 20.83%;
+      height: 18.75rem;
+    }
+    &__blure-bottomright {
+      width: 15.62%;
+      height: 225px;
+      top: 51.06rem;
+    }
+    &__blure-bottomleft {
+      width: 16.8%;
+      height: 15.125rem;
+    }
+    &__blure-service {
+      position: absolute;
+      display: block;
+      width: 20.83%;
+      height: 18.75rem;
+      background: $secondary-clr;
+      opacity: 0.2;
+      filter: blur(250px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      right: 0;
+      top: 3108px;
+    }
+    &__blure-projects {
+      position: absolute;
+      display: block;
+      width: 20.83%;
+      height: 18.75rem;
+      background: $secondary-clr;
+      opacity: 0.2;
+      filter: blur(250px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      right: 0;
+      top: 284.125rem;
+    }
+    &__blure-reviews {
+      position: absolute;
+      display: block;
+      width: 20.83%;
+      height: 18.75rem;
+      background: $secondary-clr;
+      opacity: 0.2;
+      filter: blur(250px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      right: 3.125rem;
+      top: 346.81rem;
+    }
+    &__blure-blog {
+      position: absolute;
+      display: block;
+      width: 20.83%;
+      height: 18.75rem;
+      background: $secondary-clr;
+      opacity: 0.2;
+      filter: blur(250px);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      right: 50px;
+      top: 394rem;
+    }
+    &__ornament-circle-aside-bottom {
+      display: none;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .about {
-  padding: 2.81rem 0 5rem 0;
+  padding-top: 2.81rem;
   &__maincontent-content-title {
     max-width: 13.687rem;
   }
@@ -29,5 +29,51 @@
   &__ratings-rating-subtitle {
     font-size: 1.25rem;
     line-height: 1.2em;
+  }
+}
+@media (min-width: 600px) {
+  .about {
+    &__maincontent-content-title {
+      max-width: 27.375rem;
+    }
+    &__content-text {
+      margin-top: 40px;
+    }
+    &__maincontent-content-button {
+      margin-top: 48px;
+      width: calc(170 / 700 * 100%);
+      min-height: 3.5rem;
+    }
+    &__main-content-collage {
+      margin: 2.5rem auto 0 auto;
+      width: calc(617 / 900 * 100%);
+    }
+    &__main-content-collage-img {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    &__maincontent {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content-text {
+      max-width: 33.69rem;
+    }
+    &__maincontent-content-button {
+      width: calc(170 / 539 * 100%);
+    }
+    &__main-content-collage {
+      margin: 0;
+      width: calc(617 / 1140 * 100%);
+    }
+    &__ratings {
+      margin: 4.875rem auto 0 auto;
+      max-width: 60.375rem;
+      min-height: auto;
+      flex-direction: row;
+    }
   }
 }

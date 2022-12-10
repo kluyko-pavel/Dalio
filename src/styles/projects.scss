@@ -1,27 +1,73 @@
 .projects {
-  padding-top: 80px;
+  padding-top: 5rem;
   &__filter {
-    padding: 32px 0 40px 0;
+    padding: 1rem 0 2.5rem 0;
     overflow: scroll;
   }
   &__filter-items {
-    width: 476px;
+    width: 29.75rem;
     display: flex;
     justify-content: space-between;
   }
   &__filter-link {
     text-decoration: none;
-    @include font("Inter", 500, 16px, 30px, #f3f5f6);
+    @include font("Inter", 500, 1rem, 1.875em, #f3f5f6);
   }
   &__filter-link:hover {
-    color: $main-yellow;
+    color: $secondary-clr;
   }
-  &__content {
-    margin: 0 -8px;
+  &__content-item-title {
+    display: none;
   }
-
-  &__content-item {
-    margin: 0 8px;
-    width: calc(100% / 12 * 12 - 16px) !important;
+  &__content-item-text {
+    display: none;
+  }
+  &__content-item-btn {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .projects {
+    &__filter {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0 2.5rem 0;
+    }
+    &__content {
+      max-width: 34.625rem;
+      margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .projects {
+    padding-top: 7.5rem;
+    &__header {
+      justify-content: center;
+    }
+    &__header-link {
+      display: none;
+    }
+    &__content {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    &__content-item-title {
+      display: block;
+      @include font("Inter", 700, 1.5rem, 1.5em, #fff);
+      max-width: 24.56rem;
+      margin-top: 2rem;
+    }
+    &__content-item-text {
+      display: block;
+      margin-top: 20px;
+    }
+    &__content-item-btn {
+      display: flex;
+      margin: 3rem auto 0 auto;
+      width: calc(200 / 1140 * 100%);
+      min-height: 3.5rem;
+    }
   }
 }

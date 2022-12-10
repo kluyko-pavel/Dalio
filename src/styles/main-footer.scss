@@ -1,33 +1,24 @@
 .main-footer {
   padding: 40px 0 29px 0;
-  background-color: $main-grey;
-
-  // .main-footer__information
-
+  background-color: $secondary-clr-dark;
+  &__ornament {
+    display: none;
+  }
   &__information {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  // .main-footer__information-form
-
   &__information-form {
-    background-color: $main-yellow;
+    background-color: $secondary-clr;
     padding: 60px 48px;
     border-radius: 20px;
     position: relative;
   }
-
-  // .main-footer__information-form-title
-
   &__information-form-title {
     margin: 0;
-    @include font("Inter", 600, 20px, 30px, $main-blue);
+    @include font("Inter", 600, 20px, 30px, $main-clr);
   }
-
-  // .main-footer__information-form-input
-
   &__information-form-input {
     margin-top: 15px;
     width: 100%;
@@ -37,14 +28,12 @@
     outline: none;
     border-bottom: 1px solid #f3f5f6;
     &::placeholder {
-      @include font("Inter", 400, 16px, 16px, $main-blue);
+      @include font("Inter", 400, 16px, 16px, $main-clr);
       letter-spacing: -0.21px;
     }
   }
-
-  // .main-footer__information-form-submit
-
   &__information-form-submit {
+    cursor: pointer;
     background: url(../assets/icons/submit-icon.svg) no-repeat;
     border: none;
     width: 16px;
@@ -53,9 +42,6 @@
     top: 170px;
     right: 48px;
   }
-
-  // .main-footer__information-contacts
-
   &__information-contacts {
     margin-top: 40px;
     width: calc(172 / 327 * 100%);
@@ -63,30 +49,25 @@
     flex-direction: column;
     align-items: center;
   }
-
-  // .main-footer__information-contacts-title
-
   &__information-contacts-title {
     margin: 0;
     @include font("Inter", 600, 18px, 18px, #fff);
   }
-
-  // .main-footer__information-contacts-inf
-
   &__information-contacts-inf {
     margin-top: 16px;
     text-align: center;
+    @include font("Inter", 400, 16px, 30px, #fff);
+    text-decoration: none;
   }
-
-  // .main-footer__additional-inf
-
   &__additional-inf {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  &__additional-inf-copiraiting-desktop {
+    display: none;
+  }
   &__additional-inf-privacy {
     width: calc(94 / 327 * 100%);
     text-align: center;
@@ -97,21 +78,80 @@
     justify-content: space-between;
     width: calc(168 / 327 * 100%);
   }
-
-  // .main-footer__additional-inf-link
-
-  &__additional-inf-link {
-  }
-
-  // .main-footer__additional-inf-link-img
-
-  &__additional-inf-link-img {
-  }
   &__additional-inf-copiraiting {
     margin-top: 40px;
   }
 }
-.container {
+@media (min-width: 600px) {
+  .main-footer {
+    &__additional-inf-links {
+      width: calc(168 / 600 * 100%);
+    }
+    &__information-form-submit {
+      top: 115px;
+    }
+  }
 }
-.main-footer-container {
+@media (min-width: 1024px) {
+  .main-footer {
+    padding: 48px 0;
+    &__ornament {
+      display: block;
+      position: absolute;
+      top: -30px;
+      left: 0;
+    }
+    &__information {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__information-form {
+      flex-basis: 624px;
+      padding: 80px 48px;
+    }
+    &__information-form-input {
+      border-bottom: 1px solid $main-clr;
+    }
+    &__information-form-submit {
+      top: 130px;
+    }
+    &__information-contacts {
+      padding-left: 15px;
+      margin: 0;
+      width: calc(257 / 1280 * 100%);
+      align-items: flex-start;
+    }
+    &__information-contacts-title {
+      margin: 0;
+    }
+    &__information-contacts-inf {
+      text-align: start;
+      padding-right: 10px;
+    }
+    &__additional-inf {
+      margin-top: 52px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__additional-inf-copiraiting-desktop {
+      display: block;
+    }
+    &__additional-inf-privacy {
+      flex-basis: 225px;
+      text-align: center;
+    }
+    &__additional-inf-links {
+      flex-basis: 168px;
+      margin-top: 0;
+    }
+    &__additional-inf-copiraiting {
+      display: none;
+    }
+  }
+  .main-footer-container {
+    padding-left: 30px;
+    max-width: 1310px;
+    position: relative;
+  }
 }

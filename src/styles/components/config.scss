@@ -1,3 +1,6 @@
+body {
+  background-color: $main-clr;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -5,9 +8,14 @@ h2 {
   @include font("Inter", 700, 1.5rem, 1.21em, #ffffff);
 }
 p {
-  @include font("Inter", 400, 1rem, 1.875em, $main-white2);
+  @include font("Inter", 400, 1rem, 1.875em, $text-clr);
 }
 button,
 a {
   cursor: pointer;
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
 }

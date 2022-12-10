@@ -3,14 +3,11 @@
 
   &__content {
     padding-top: 24px;
-    margin: 0 -9px;
   }
   &__content-item {
     padding: 3rem 3rem 3rem 2.12rem;
-    margin: 0 9px;
-    background-color: $main-grey;
+    background-color: $secondary-clr-dark;
     border-radius: 30px;
-    width: calc(100% / 12 * 12 - 18px) !important;
   }
   &__content-item-icon-img {
     width: 3rem;
@@ -24,5 +21,72 @@
     margin-top: 2rem;
     width: calc(159 / 248 * 100%);
     min-height: 3.25rem;
+  }
+}
+.service-desktop {
+  display: none;
+}
+@media (min-width: 600px) {
+  .service__content {
+    max-width: 41.56rem;
+    margin: 0 auto;
+  }
+  .service__content-item-button {
+    width: calc(159 / 560 * 100%);
+  }
+}
+@media (min-width: 1024px) {
+  .service {
+    display: none;
+  }
+  .service-desktop {
+    display: block;
+    padding: 7.5rem 0 3.125rem 0;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__header-btn {
+      flex-basis: 8.06rem;
+      min-height: 3.5rem;
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding-top: 2.5rem;
+    }
+    &__content-item {
+      background-color: $secondary-clr-dark;
+      padding: 5.19rem 2.56rem 5.19rem 2.125rem;
+      &:nth-child(1) {
+        border-radius: 50px 0px 0px 0px;
+      }
+      &:nth-child(2) {
+        transform: translateY(50px);
+        border-radius: 0px 50px 0px 0px;
+      }
+      &:nth-child(3) {
+        border-radius: 0px 0px 0px 50px;
+      }
+      &:nth-child(4) {
+        transform: translateY(50px);
+        border-radius: 0px 0px 50px 0px;
+      }
+    }
+    &__content-item-title {
+      @include font("Inter", 600, 1.875rem, 1.2em, #fff);
+      margin-top: 24px;
+    }
+    &__content-item-text {
+      max-width: 30rem;
+      margin-top: 24px;
+    }
+    &__content-item-btn {
+      width: calc(159 / 480 * 100%);
+      min-height: 3.25rem;
+      margin-top: 2.5rem;
+    }
   }
 }

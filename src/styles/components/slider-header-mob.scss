@@ -3,7 +3,7 @@
   justify-content: space-between;
   &__link {
     text-decoration: none;
-    @include font("Inter", 400, 1rem, 1.187em, $main-yellow);
+    @include font("Inter", 400, 1rem, 1.187em, $secondary-clr);
     align-self: center;
   }
 }

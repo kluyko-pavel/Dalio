@@ -1,40 +1,40 @@
 .reviews {
-  padding-top: 80px;
+  padding-top: 5rem;
   &__content {
     padding-top: 24px;
-    margin: 0 -8px;
   }
   &__content-item {
-    padding: 56px 31px 40.5px 31px;
-    background-color: $main-grey;
+    padding: 3.5rem 1.94rem 2.53rem 1.94rem;
+    background-color: $secondary-clr-dark;
     border-radius: 20px;
-    margin: 0 8px;
-    width: calc(100% / 12 * 12 - 16px) !important;
   }
   &__content-item-icon {
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     display: flex;
     justify-content: center;
+  }
+  &__content-item-icon-desktop {
+    display: none;
   }
   &__content-item-reviewer {
     display: flex;
     flex-direction: column;
   }
   &__content-item-reviewer-about {
-    max-width: 246px;
+    max-width: 15.375rem;
     display: flex;
-    padding: 31px 0 19.5px 0;
+    padding: 1.94rem 0 1.22rem 0;
   }
   &__content-item-reviewer-photo {
     align-self: flex-start;
   }
   &__content-item-reviewer-name {
-    margin-left: 16px;
+    margin-left: 1rem;
     p {
-      @include font("Inter", 500, 18px, 30px, #fff);
+      @include font("Inter", 500, 1.125rem, 1.66em, #fff);
     }
     span {
-      @include font("Inter", 400, 16px, 30px, $main-yellow);
+      @include font("Inter", 400, 1rem, 1.875em, $secondary-clr);
     }
   }
   &__content-item-reviewer-stars {
@@ -42,5 +42,62 @@
     align-self: center;
     display: flex;
     justify-content: space-between;
+  }
+}
+.swiper-button-next {
+  display: none;
+}
+@media (min-width: 600px) {
+  .reviews {
+    &__content {
+      max-width: 740px;
+    }
+    &__content-item-reviewer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__content-item-reviewer-about {
+      padding: 1.94rem 0 0 0;
+    }
+    &__content-item-reviewer-stars {
+      flex-basis: 7rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .reviews {
+    padding-top: 7.5rem;
+    &__content {
+      padding: 3rem 0 0 0.94rem;
+      max-width: 1140px;
+    }
+    &__content-item {
+      padding: 3.375rem 3rem 3.31rem 4.06rem;
+      border-radius: 50px;
+    }
+    &__content-item-icon {
+      display: none;
+    }
+    &__content-item-icon-desktop {
+      display: block;
+      opacity: 0.2;
+    }
+    &__content-item-text {
+      padding: 2rem 0;
+    }
+    &__content-item-reviewer-about {
+      padding: 0;
+    }
+  }
+  .slider-header__link {
+    display: none;
+  }
+  .swiper-button-next {
+    display: block;
+    width: 56px;
+    height: 56px;
+    top: 50%;
+    left: -15px;
+    background: url(../assets/items/reviews-arrow-next.svg);
   }
 }
