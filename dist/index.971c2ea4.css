@@ -511,10 +511,12 @@ button, a {
 }
 
 .menu-burger {
+  background-color: inherit;
   cursor: pointer;
   z-index: 1;
   width: 1.03rem;
   height: .75rem;
+  border: none;
   position: relative;
 }
 
